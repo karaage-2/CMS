@@ -26,7 +26,7 @@ $thumbnail-url = "";
 <!-- このしたのやつはsettings.php的なの作ってそこの変数に中身入れてからincludeして設定する。 -->
 
 <!-- 全スタイルシートをまとめたの作ってそれをすべてのページで読ませる。 -->
-<link rel="stylesheet" href="CSSファイルのURL" />
+<link rel="stylesheet" href="./style.css" />
 
 
 
