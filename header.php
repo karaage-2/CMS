@@ -12,13 +12,13 @@
 	<meta property="og:url" content="<?php echo (empty($_SERVER['HTTPS']) ? 'http://' : 'https://') . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>" />
 	<meta property="og:title" content="<?php echo $title; ?>" />
 	<meta property="og:type" content="article">
-	<!--トップページならwebsite -->
+	<!--[ ]トップページならwebsite -->
 	<meta property="og:description" content="<?php echo $description; ?>" />
 	<meta property="og:locale" content="ja_JP" />
 	<meta property="og:image" content="<?php echo $thumbnailurl; ?>" />
 	<meta name="twitter:card" content="<?php echo $ogsummary; ?>" />
-	<!-- このしたのやつはsettings.php的なの作ってそこの変数に中身入れてからincludeして設定する。 -->
-	<!-- 全スタイルシートをまとめたの作ってそれをすべてのページで読ませる。 -->
+	<!-- [ ]このしたのやつはsettings.php的なの作ってそこの変数に中身入れてからincludeして設定する。 -->
+	<!-- [ ]全スタイルシートをまとめたの作ってそれをすべてのページで読ませる。 -->
 	<link rel="stylesheet" href="./style.css" />
 	<link rel="icon" href="画像URL" sizes="16x16" type="image/png" />
 	<link rel="icon" href="画像URL" sizes="32x32" type="image/png" />
@@ -32,4 +32,4 @@
 	<meta name="twitter:site" content="@Twitterユーザー名" />
 	<meta property="fb:app_id" content="appIDを入力" />
 </head>
-<!-- この上のは/articles/article-name/index.phpみたいなの作ってその中に入れてそのファイルにこのファイルをincludeさせる。 -->
+<!-- [ ]この上のは/articles/article-name/index.phpみたいなの作ってその中に入れてそのファイルにこのファイルをincludeさせる。 -->
