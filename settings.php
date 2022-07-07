@@ -9,3 +9,4 @@ $themecolor = ''; //#1c8adb
 $sitename = ''; //my study note
 $author_twitter_account = ''; //@benkyouki-official
 $facebook_app_id = '';
+$toppageurl = '';
