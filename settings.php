@@ -10,3 +10,4 @@ $sitename = ''; //my study note
 $author_twitter_account = ''; //@benkyouki-official
 $facebook_app_id = '';
 $toppageurl = '';
+$siteaboutpage = '';// https://benkyouki.com/about

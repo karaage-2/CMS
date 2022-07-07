@@ -1,4 +1,10 @@
-<?php require_once 'article-settings.php'; ?>
+<?php
+
+$title = "";
+$description = "";
+$thumbnailurl = "";
+$ogsummary = "";
+?>
 <!-- [ ]全ファイル構造化データに対応させる。 -->
 <?php require 'header.php'; ?>
 
