@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+
+		<!--<link rel="stylesheet" href="main.css">-->
+		<script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+	</head>
+	<body>
+		<div id="editor"></div>
+
+		<button id="save">保存</button>
+
+		<script src="https://cdn.jsdelivr.net/npm/@editorjs/header@latest"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@editorjs/list@latest"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@editorjs/checklist@latest"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@editorjs/quote@latest"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@editorjs/code@latest"></script>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/editorjs-html@3.4.0/build/edjsHTML.browser.js"
+		></script>
+		<script>
+			const editor = new EditorJS({
+				holder: "editor",
+				tools: {
+					header: {
+						class: Header,
+						inlineToolbar: ["link"],
+					},
+					list: List,
+					checklist: Checklist,
+					quote: Quote,
+					code: CodeTool,
+				},
+			});
+
+			const edjsParser = edjsHTML();
+			let html = edjsParser.parse(editorjs_clean_data);
+
+			const save = document.getElementById("save");
+
+			save.addEventListener("click", () => {
+				editor
+					.save()
+					.then((outputData) => {
+						const edjsParser = edjsHTML();
+						const outputData = edjsParser.parse(editorjs_data);
+						// returns array of html strings per block
+						console.log(outputData);
+					})
+					.catch((error) => {
+						console.log("Saving failed: ", error);
+					});
+			});
+		</script>
+	</body>
+</html>
