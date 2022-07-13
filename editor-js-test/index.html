@@ -16,10 +16,6 @@
 		<script src="https://cdn.jsdelivr.net/npm/@editorjs/checklist@latest"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@editorjs/quote@latest"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@editorjs/code@latest"></script>
-		<script
-			type="text/javascript"
-			src="https://cdn.jsdelivr.net/npm/editorjs-html@3.4.0/build/edjsHTML.browser.js"
-		></script>
 		<script>
 			const editor = new EditorJS({
 				holder: "editor",
@@ -35,19 +31,13 @@
 				},
 			});
 
-			const edjsParser = edjsHTML();
-			let html = edjsParser.parse(editorjs_clean_data);
-
 			const save = document.getElementById("save");
 
 			save.addEventListener("click", () => {
 				editor
 					.save()
 					.then((outputData) => {
-						const edjsParser = edjsHTML();
-						const outputData = edjsParser.parse(editorjs_data);
-						// returns array of html strings per block
-						console.log(outputData);
+						console.log("Article data: ", outputData);
 					})
 					.catch((error) => {
 						console.log("Saving failed: ", error);
