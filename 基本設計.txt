@@ -14,7 +14,7 @@ jsはeditorしてhtml吐くとこだけ。
 
 [ ]テキストエディターのスニペット機能を使ってブログカードなどを呼び出し、エディターにして使う。
 [ ]ヘッダーや設定は毎回読み込む。articleは記事を書くためにテンプレを残しておいてそれを複製して使う。
-
+[ ]スタイルシートは全部用を一個作ってそれ読む
 
 
 使うファイルたち
@@ -23,4 +23,5 @@ jsはeditorしてhtml吐くとこだけ。
 ・style.css   全スタイルここに書いておく
 ・/template/header.php  ヘッダーの書いとく。変数利用。
 ・/template/footer.php  記事本文より下のを書いとく。変数は必要に応じて利用。
-・/admin/newposthtml.html   editor.jsで書いてhtml吐くページ。自分だけアクセスして書いたら記事ページに張り付ける感じ。
+・/admin/newposthtml.html   editor.jsで書いてhtml吐くページ。自分だけアクセスして書いたら記事ページに張り付ける感じ。    #edit
+・settings.php 設定などを記載。                                                                               #edit
