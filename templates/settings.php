@@ -12,3 +12,5 @@ $facebook_app_id = '';
 $toppageurl = '';
 $siteaboutpage = ''; // https://benkyouki.com/about
 $oglocale = 'ja_JP'; //ja_JP
+
+$customheadertag = ''; //<meta name="google-site-verification" content="サーチコンソールで発行されるサイト識別用のコード"/>
