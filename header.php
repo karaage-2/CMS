@@ -33,3 +33,10 @@
 	<meta property="fb:app_id" content="appIDを入力" />
 </head>
 <!-- [ ]この上のは/articles/article-name/index.phpみたいなの作ってその中に入れてそのファイルにこのファイルをincludeさせる。 -->
+
+<body>
+	<header>
+		<div id="logo"></div>
+		<nav></nav>
+	</header>
+	<article></article>
