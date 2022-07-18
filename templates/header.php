@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<meta name="format-detection" content="email=no,telephone=no,address=no" />
-	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="style.php" />
 	<title><?php echo $title; ?></title>
 	<meta name="description" content="<?php echo $description; ?>" />
 	<meta property="og:url" content="<?php echo (empty($_SERVER['HTTPS']) ? 'http://' : 'https://') . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>" />
@@ -28,4 +28,14 @@
 	<meta property="og:site_name" content="<?php echo $sitename; ?>" />
 	<meta name="twitter:site" content="<?php echo $author_twitter_account; ?>" />
 	<meta property="fb:app_id" content="<?php echo $facebook_app_id; ?>" />
+	<meta name="referrer" content="none-when-downgrade">
+	<meta name="twitter:creator" content="<?php echo $author_twitter_account; ?>" />
+	<?php echo $customheadertag; ?>
 </head>
+
+<body>
+	<header>
+		<div id="logo"></div>
+		<nav></nav>
+	</header>
+	<article>

@@ -13,8 +13,4 @@ $sitetype = "";
 ?>
 <!-- [ ]全ファイル構造化データに対応させる。 -->
 <?php require '/templates/header.php'; ?>
-
-<body>
-</body>
-
-</html>
+<?php require '/templates/footer.php'; ?>
