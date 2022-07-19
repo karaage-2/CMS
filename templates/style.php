@@ -4,6 +4,6 @@ require '/templates/settings.php';
 ?>
 
 body::selection {
-background: #000;
+background: <?php echo $themecolor; ?>;
 color: #fff;
 }
