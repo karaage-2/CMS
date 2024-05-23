@@ -1,3 +1,14 @@
 #editor {
-background-color: pink;
+    border: 2px solid black;
+    margin-bottom: 1%;
+    width: 100%;
+}
+
+#save {
+    border: 2px solid black;
+    background: none;
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 100%;
 }
