@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .save()
       .then((outputData) => {
         let blob = new Blob([JSON.stringify(outputData.blocks)], { type: "application/json" });
-        e.target.download = prompt("The article permalink name?", "article");
+        e.target.download = prompt("The article permalink name ? ", "article");
         e.target.href = URL.createObjectURL(blob);
       })
       .catch((error) => {
