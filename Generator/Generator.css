@@ -1,14 +1,32 @@
-#editor {
-    border: 2px solid black;
-    margin-bottom: 1%;
+:root {
+    --color1: black;
+    --placeholderOpacity: 0.5;
+}
+
+#editor,
+#title,
+#save,
+#load {
+    border: 2px solid var(--color1);
+    margin: 1% 0;
     width: 100%;
 }
 
 #save {
-    border: 2px solid black;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color1);
+    padding: 2px, 0, 2px;
+    margin-bottom: 1%;
+}
+
+#load {
     background: none;
     text-align: center;
     display: block;
-    margin: auto;
-    width: 100%;
+}
+
+#originalLoad {
+    display: none;
 }
