@@ -15,12 +15,15 @@
 
 <body>
   <div>
-    <form name="JSONloader"> <input id="originalLoad" type="file"></input>
-      <label id="load" for="originalLoad">Load JSON file</label>
-    </form>
+    <div id="menu">
+      <form name="JSONloader">
+        <input id="hiddenLoader" type="file" webkitdirectory></input>
+        <label id="loader" for="hiddenLoader">Load an article</label>
+      </form>
+      <div id="title" contenteditable="true">Permalink</div>
+      <a id="save">Prepare and download JSON file</a>
+    </div>
     <div id="editor"></div>
-    <div id="title" contenteditable="true">Permalink</div>
-    <a id="save">Prepare JSON file</a>
   </div>
 </body>
 

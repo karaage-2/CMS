@@ -6,7 +6,7 @@
 #editor,
 #title,
 #save,
-#load {
+#loader {
     border: 2px solid var(--color1);
     margin: 1% 0;
     width: 100%;
@@ -21,12 +21,12 @@
     margin-bottom: 1%;
 }
 
-#load {
+#loader {
     background: none;
     text-align: center;
     display: block;
 }
 
-#originalLoad {
+#hiddenLoader {
     display: none;
 }
