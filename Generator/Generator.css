@@ -6,12 +6,14 @@
 #title,
 #save,
 #loader,
-#menuCloser {
+#menuCloser,
+#menuOpener {
     border: 2px solid var(--color1);
     margin: 1% 0;
     width: 100%;
     display: block;
     text-align: center;
+    user-select: none;
 }
 
 #save {
@@ -38,15 +40,15 @@
     cursor: pointer;
 }
 
-/* #hiddenMenuOpener {
+#hiddenMenuOpener {
     display: none;
-} */
+}
 
-#hiddenMenuOpener:checked+.menuCard {
+#hiddenMenuOpener:checked~#menuCard {
     display: block;
 }
 
-.menuCard {
+#menuCard {
     top: 0;
     left: 0;
     width: 100%;
