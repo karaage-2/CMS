@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  let isMenuOpen = false;
   const editor = new EditorJS({
     holder: "editor",
     data: "",

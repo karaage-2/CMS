@@ -14,17 +14,18 @@
 </head>
 
 <body>
-  <div>
-    <div id="menu">
-      <form name="JSONloader">
-        <input id="hiddenLoader" type="file" webkitdirectory></input>
-        <label id="loader" for="hiddenLoader">Load an article</label>
-      </form>
-      <div id="title" contenteditable="true">Permalink</div>
-      <a id="save">Prepare and download JSON file</a>
-    </div>
-    <div id="editor"></div>
+  <input type="checkbox" id="hiddenMenuOpener">
+  <label id="menuOpener" for="hiddenMenuOpener">MENU</label>
+  <div class="menuCard">
+    <label id="menuCloser" for="menuOpener">CLOSE</label>
+    <form name="JSONloader">
+      <input id="hiddenLoader" type="file"></input>
+      <label id="loader" for="hiddenLoader">Load an article</label>
+    </form>
+    <div id="title" contenteditable="true">Permalink</div>
+    <a id="save">Prepare and download JSON file</a>
   </div>
+  <div id="editor"></div>
 </body>
 
 </html>

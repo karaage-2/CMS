@@ -5,10 +5,13 @@
 #editor,
 #title,
 #save,
-#loader {
+#loader,
+#menuCloser {
     border: 2px solid var(--color1);
     margin: 1% 0;
     width: 100%;
+    display: block;
+    text-align: center;
 }
 
 #save {
@@ -28,4 +31,33 @@
 
 #hiddenLoader {
     display: none;
+}
+
+#menuOpener,
+#menuCloser {
+    cursor: pointer;
+}
+
+/* #hiddenMenuOpener {
+    display: none;
+} */
+
+#hiddenMenuOpener:checked+.menuCard {
+    display: block;
+}
+
+.menuCard {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: none;
+    border: 2px solid var(--color1);
+    position: fixed;
+    z-index: 999;
+}
+
+#menuCloser {
+    cursor: pointer;
 }
