@@ -1,5 +1,7 @@
 :root {
     --color1: black;
+    --color2: black;
+    --color3: white;
 }
 
 #editor,
@@ -8,7 +10,9 @@
 #loader,
 #menuCloser,
 #menuOpener {
-    border: 2px solid var(--color1);
+    color: var(--color1);
+    border: 2px solid var(--color2);
+    background-color: var(--color3);
     margin: 1% 0;
     width: 100%;
     display: block;
@@ -18,13 +22,13 @@
 
 #editor {
     text-align: left;
+    display: block;
 }
 
 #save {
     display: block;
     text-align: center;
     text-decoration: none;
-    color: var(--color1);
     padding: 2px, 0, 2px;
     margin-bottom: 1%;
 }
@@ -48,20 +52,17 @@
     display: none;
 }
 
+#menuCard {
+    display: none;
+}
+
 #hiddenMenuOpener:checked~#menuCard {
     display: block;
 }
 
-#menuCard {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
+#hiddenMenuOpener:checked~#editor,
+#hiddenMenuOpener:checked~#menuOpener {
     display: none;
-    border: 2px solid var(--color1);
-    position: fixed;
-    z-index: 999;
 }
 
 #menuCloser {
