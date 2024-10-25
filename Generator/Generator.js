@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let isMenuOpen = false;
   const editor = new EditorJS({
     holder: "editor",
     data: "",
@@ -33,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
   //-----------------------------------------------
-  const load = document.forms.JSONloader;
   load.addEventListener('change', function (e) {
     let result = e.target.files[0];
     let reader = new FileReader();
